@@ -14,10 +14,9 @@
   <meta name="Keywords" content="<?php if ( $conf['tpl_mmClean']['keywords'] ) echo $conf['tpl_mmClean']['keywords'].","; ?><?php tpl_pagetitle()?>"/>
   <meta name="Description" content="<?php if ( $conf['tpl_mmClean']['description'] ) echo $conf['tpl_mmClean']['description']; ?><?php tpl_pagetitle()?>"/>
   <?php tpl_metaheaders()?>
+  <link rel="stylesheet" href="http://opensourcebridge.org/common/osbp_common.css" type="text/css" media="screen" title="no title" charset="utf-8" />
   <link rel="stylesheet" media="screen" type="text/css" href="<?php echo DOKU_TPL?>css/layout.css" />
   <link rel="stylesheet" media="screen" type="text/css" href="<?php echo DOKU_TPL?>css/design.css" />
-  <link rel="stylesheet" media="screen" type="text/css" href="<?php echo DOKU_TPL?>css/topbar.css" />
-  <link rel="stylesheet" media="screen" type="text/css" href="<?php echo DOKU_TPL?>css/sidebar.css" />
 
   <?php if($lang['direction'] == 'rtl') {?>
   <link rel="stylesheet" media="screen" type="text/css" href="<?php echo DOKU_TPL?>css/rtl.css" />

@@ -10,82 +10,74 @@
 ?>
 <body>
 <?php @include(dirname(__FILE__).'/topheader.html')?>
-<div class="page">
-   <b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
-     <div class="container">
-
-
-
-    <div class="header">
-		<b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
-      <div class="logo">
-        <?php tpl_link(wl(),$conf['title'],'name="top" accesskey="h" title="[ALT+H]"') ?>
-				
-				<?php if ( true == $conf['tpl_mmClean']['searchForm'] ) { ?>
-					<div class="searchform" style="margin-top: 60px;"> <?php tpl_searchform() ?> </div>
-				<?php } ?>
-      </div>
-      <div class="topbar">
-				<?php tpl_menu1(); ?>
-      </div>
-  <b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
-
+<div id="wrapper">
+   <div id="header">
+      <h1 id='site-title'><?php tpl_link(wl(),$conf['title'],'name="top" accesskey="h" title="[ALT+H]"') ?></h1>
+      <div id="site-description">An open source conference in Portland, Oregon | June 2009</div>
     </div>
-    <?php /*old includehook*/ @include(dirname(__FILE__).'/header.html')?>
+    
+    <div id="access">
+       <div class="skip-link">
+         <a href="#content" title="Skip to content">Skip to content</a>
+       </div>
+       <div id="menu">
+         <ul>
+           <li><a href="/">Blog</a>
+           <li class="page_item page-item-10"><a href="/about/" title="About">About</a></li>
+           <li class="page_item page-item-22"><a href="/contact-us/" title="Contact Us">Contact Us</a></li>
+           <li class="page_item page-item-56"><a href="/volunteer/" title="Volunteer">Volunteer</a></li>
+           <li class="page_item"><a href="/proposals/">Proposals</a></li>
+         </ul>
+       </div>
+   </div>
+   	
+   <div id="container">
+      <?php flush()?>
 
-  <?php flush()?>
-
-  <?php /*old includehook*/ @include(dirname(__FILE__).'/pageheader.html')?>
-  <?php
-    if ( !tpl_isMenu2() )
-    { 
-  ?>
-      <div class="content">
-  			<?php html_msgarea()?>
+      <div id="content">
+  		  <?php html_msgarea()?>
         <?php tpl_content()?>
+        <div class="meta">
+           <div class="doc">
+              <?php tpl_pageinfo()?>
+           </div>
+        </div>
       </div>
-  <?php 
-    } 
-    else 
-    { 
-  ?>
-      <div class="content_with_sidebar">
-        <?php tpl_content()?>
-  		<?php html_msgarea()?>
-      </div>
-      <div class="sidebar">
-      <b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
-      <?php tpl_menu2() ?>
-      <b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
-      </div>
-  <?php } ?>
-
-  <div class="clearer">&nbsp;</div>
-
   <?php flush()?>
-
-  <?php if ($INFO['perm'] > AUTH_READ || true == $conf['tpl_mmClean']['wikiBar']  ) { ?>
-  <div class="stylefoot">
-    <div class="meta">
-      <div class="doc">
-        <?php tpl_pageinfo()?>
-      </div>
-      <div class="user">
-        <?php tpl_userinfo()?>
-      </div>
-    </div>
-    <?php tpl_bottombar(); ?>
-    <?php /*old includehook*/ @include(dirname(__FILE__).'/pagefooter.html')?>
-  </div>
-  <?php } ?>
-
-<?php /*old includehook*/ @include(dirname(__FILE__).'/footer.php')?>
-
-</div>
-<b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
 </div>
 
-<?php tpl_indexerWebBug();?>
+<div class='sidebar'>
+   <ul class="xoxo">
+      <li id="topbar">
+         <h3><?php echo $conf['title']; ?></h3>
+         <?php tpl_menu1(); ?>
+      </li>
+      <?php if ($INFO['perm'] > AUTH_READ || true == $conf['tpl_mmClean']['wikiBar']  ) { ?>
+      <li id='wiki_controls'>
+         <h3>Wiki Menu</h3>
+         <?php tpl_bottombar(); ?>
+         <div class="meta">
+            <div class="user">
+               <?php tpl_userinfo()?>
+            </div>
+         </div>
+       </li>
+       <?php } ?>
+          
+      <?php if ( true == $conf['tpl_mmClean']['searchForm'] ) { ?>
+      <li id='search'>
+         <h3>Wiki Search</h3>
+         <div class="searchform"> <?php tpl_searchform() ?> </div>
+      </li>
+      <?php } ?>
+     	<?php tpl_indexerWebBug();?>
+</div>
+
+  <div id='footer'></div>
+</div>
+
+
+
 
 </body>
 </html>

@@ -1,3 +1,5 @@
+/* @override http://localhost/web/dokuwiki/lib/tpl/osbp_dokuwiki_theme/css/layout.css */
+
 /**
  * Tableless Layout for default template
  *
@@ -11,104 +13,6 @@
 
 
 /* -------------- top row --------------- */
-
-div.page b.rtop, 
-div.page b.rbottom
-{
-    display:block;
-    background: #7399A6;
-}
-
-div.page b.rtop b, 
-div.page b.rbottom b
-{   
-    display:block;
-    height: 1px;
-    overflow: hidden;
-    background: #ffffff;
-}
-
-div.header b.rtop,
-div.header b.rbottom
-{
-    display:block;
-    background: #ffffff;
-}
-
-div.header b.rtop b,
-div.header b.rbottom b
-{   
-    display:block;
-    height: 1px;
-    overflow: hidden;
-    background: #436976;
-}
-
-div.footer b.rtop,
-div.footer b.rbottom
-{
-    display:block;
-    background: #ffffff;
-}
-
-div.footer b.rtop b,
-div.footer b.rbottom b
-{   
-    display:block;
-    height: 1px;
-    overflow: hidden;
-    background: #436976;
-}
-
-/*
-div.sidebar b.rtop,
-div.sidebar b.rbottom
-{
-    display:block;
-    background: #ffffff;
-}
-
-div.sidebar b.rtop b,
-div.sidebar b.rbottom b
-{   
-    display:block;
-    height: 1px;
-    overflow: hidden;
-    background: #436976;
-}
-*/
-b.r1
-{
-    margin: 0 5px
-}
-
-b.r2
-{
-    margin: 0 3px
-}
-
-b.r3
-{
-    margin: 0 2px
-}
-
-b.rtop b.r4, b.rbottom b.r4
-{
-    margin: 0 1px;
-    height: 2px
-}
-
-.header 
-{
-    margin-bottom: 0px;
-    background:#436976;
-/*
-    border:1px solid #c3c3c3;
-    background-image: url(../images/header.png);
-    background-position: top left;
-    background-repeat: no-repeat;
-*/
-}
 
 .stylefoot 
 {
@@ -131,24 +35,6 @@ b.rtop b.r4, b.rbottom b.r4
   color:#FF9933;
 }
 
-.logo 
-{
-/*	float:right;*/
-	font-weight:normal;
-	text-align:right;
-    margin-right:13px !important;
-    margin-right:9px;
-    margin-top:9px;
-    height: 100px;
-}
-
-.logo a:link, .logo a:visited, .logo a:hover, .logo a:active 
-{
-	color:#f8f8f8;
-	text-decoration:none;
-	letter-spacing:2pt;
-}
-
 #bar_bottom {
   display:block;
   margin-bottom:3px;
@@ -163,10 +49,9 @@ div.meta {
   text-align:right;
 }
 
-div.meta div.user {
-}
-
-div.meta div.doc{
+div.sidebar div.meta {
+	text-align: left;
+	margin-top: .5em;
 }
 
 /* ---------------  Media Selection  ----------------- */

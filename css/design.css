@@ -1,3 +1,5 @@
+/* @override http://localhost/web/dokuwiki/lib/tpl/osbp_dokuwiki_theme/css/design.css */
+
 /**
  * main layout by
  * @author Andreas Gohr <andi@splitbrain.org>
@@ -9,79 +11,6 @@
  */
 
 /* -------------- general elements --------------- */
-
-body 
-{
-  font: 14px Verdana, "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  margin-top:10px;
-  margin-bottom:10px;
-  background-attachment:scroll;
-  line-height:150%;
-  background:#7399A6;
-  color: #000;
-}
-
-div.page
-{
-  margin: auto;
-  width: 770px;
-  background: #ffffff;
-}
-
-div.container
-{
-    padding: 10px;
-    padding-top: 8px;
-    width: 750px;
-}
-
-div.content_with_sidebar, div.content
-{
-  text-align: justify;
-  float:left;
-  width:580px;
-  padding: 10px;
-}
-
-div.content 
-{
-  width: 730px;
-  background-color: #ffffff;
-}
-
-table 
-{
-  padding:0;
-  margin:0;
-  font-size:0.8125em;
-}
-
-tr,td,th 
-{
-    padding:0; 
-    margin:0;
-    vertical-align:top;
-}
-
-tr:hover 
-{
-  background:#f8f8f8;
-}
-
-img 
-{
-    border:0
-}
-
-p 
-{
-    margin: 0 0 1.0em 0;
-    margin: 0;
-    padding:0; 
-    font-size:0.8125em;
-}
 
 hr 
 {
@@ -103,12 +32,6 @@ form {
   border: none;
   margin: 0;
   display: inline;
-}
-
-div.searchform 
-{
-    float:right;
-    margin-bottom:11px !important;
 }
 
 label {
@@ -237,17 +160,6 @@ div.pagenav-next input.button {
 margin-left:5px;
 }
 
-/* --------------- Links ------------------ */
-
-a {
-color:#436976;
-text-decoration:none;
-}
-a:hover {
-color:#000000;
-text-decoration:underline;
-}
-
 /* windows share */
 a.windows{
 /*  background: transparent url(../images/windows.gif) 0px 1px no-repeat;
@@ -259,20 +171,6 @@ a.windows:visited {
 color:#436976;
 }
 a.windows:hover { 
-text-decoration:underline;
-}
-
-/* interwiki link */
-a.interwiki{
-/*  background: transparent url(../images/interwiki.png) 0px 1px no-repeat;
-  padding-left: 16px;*/
-  color:#436976;
-  text-decoration:none;
-}
-a.interwiki:visited {
-color:#436976;
-}
-a.interwiki:hover {
 text-decoration:underline;
 }
 
@@ -297,15 +195,9 @@ a.mail:hover {
 text-decoration:underline;
 }
 
-/* existing wikipage */
-a.wikilink1:link    { color:#436976; text-decoration:none }
-a.wikilink1:visited { color:#436976; text-decoration:none }
-a.wikilink1:hover   { color:#436976; text-decoration:underline }
-
 /* not existing wikipage */
-a.wikilink2:link    { color:#436976; text-decoration:none }
-a.wikilink2:visited { color:#436976; text-decoration:none }
-a.wikilink2:hover   { color:#436976; text-decoration:underline }
+a.wikilink2:link    { color: #f66515; }
+a.wikilink2:visited { color: #b1470e; }
 
 /* external link */
 a.urlextern{
@@ -338,10 +230,6 @@ font-size:11px;
 width:187px;
 }
 
-span.user{
-color: #cccccc;
-}
-
 /* embedded images */
 img.media {
 margin: 3px;
@@ -372,39 +260,8 @@ border-bottom: 1px dotted #000;
 }
 
 /* general headline setup */
-h1, h2, h3, h4, h5 
-{
-  color: #333;
-  font-family: Verdana, Georgia, "Lucida", Verdana, Lucida, Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  margin-left:    0;
-  margin-right:   0;
-  margin-top:     0.5em;
-  margin-bottom:  0.5em;
-  padding-left:   0;
-  padding-right:  0;
-  padding-bottom:  0px;
-  clear: left;
-  font-size: 11px;
-}
-
-/* special headlines */
-h1 { border-bottom: 1px solid #83a9b6; font-size: 15px;}
-h2 {font-size: 14px;}
-h3 {font-size: 13px;}
-h4 {font-size: 12px;}
-
-/* unordered lists */
-ul 
-{ 
-line-height: 1.5em;
-font-size:0.8125em;
-list-style-type: square;
-padding: 0;
-margin: 0px;
-margin-left: 20px;
-margin-bottom: 10px;
-list-style-image: url(../images/bullet.gif);
+#header h1 {
+	border-bottom: 0;
 }
 
 /* ordered lists */
@@ -419,10 +276,6 @@ list-style-image: none;
 }
 
 /* the list items overriding the ol definition */
-.li 
-{
-font-weight: normal;
-}
 
 ol {list-style-type: decimal}
 ol ol {list-style-type: upper-roman}
