@@ -1,0 +1,34 @@
+mmClean template for DokuWiki
+=============================
+
+Version 7.10.31
+---------------
+- Added User Profile to Bottom Bar
+
+Version 7.1.16
+--------------
+- Updated media manager to DokuWiki 2006-11-06
+- Added support for DokuWiki rewrite option (0, 1 and 2)
+- Added new configuration options (menu2Permanent, wikiBar and searchForm)
+
+Version 6.8.30
+--------------
+- Fixed problems with Edit Sidebar link
+- Added SidebarPermanent option
+
+Version 6.6.3
+-------------
+- Fixed problems with Table of content
+- Added "footer" parameter in config file
+
+Version 6.5.17
+--------------
+- Template valided with XHTML 1.0 Transitional
+
+Version 6.5.12
+--------------
+- Removed link to Google Analytics
+
+Version 6.4.27
+--------------
+- Initial Version
