@@ -1,4 +1,7 @@
-/* @override http://localhost/web/dokuwiki/lib/tpl/osbp_dokuwiki_theme/css/design.css */
+/* @override 
+	http://localhost/web/dokuwiki/lib/tpl/osbp_dokuwiki_theme/css/design.css
+	http://opensourcebridge.org/planning/lib/tpl/osbp_dokuwiki_theme/css/design.css
+*/
 
 /**
  * main layout by
@@ -115,6 +118,10 @@ margin: 1px;
 display: inline;
 }
 
+div.secedit {
+	height: 1em;
+}
+
 div.secedit input.button {
 border: 1px solid #8cacbb;
 color: #333;
@@ -122,16 +129,11 @@ background-color: #fdfdfd;
 vertical-align: middle;
 text-decoration:none;
 margin: 0px;
-padding: 0px;
 font-size: 10px;
 cursor: pointer;
-height: 15px !important;
-max-height: 15px !important;
-min-height: 15px !important;
-float:right;
 display: inline;
-margin-top:10px;
 margin-bottom:10px;
+float: right;
 }
 
 /* ----------- page navigator ------------- */
@@ -198,20 +200,6 @@ text-decoration:underline;
 /* not existing wikipage */
 a.wikilink2:link    { color: #f66515; }
 a.wikilink2:visited { color: #b1470e; }
-
-/* external link */
-a.urlextern{
-/*  background: transparent url(../images/link_icon.png) 0px 0px no-repeat;
-  padding: 1px 0px 1px 18px;*/
-  color:#436976;
-  text-decoration:none;
-}
-a.urlextern:visited {
-color:#436976;
-}
-a.urlextern:hover {
-text-decoration:underline;
-}
 
 
 /* ------------- Page elements ----------------- */
