@@ -52,7 +52,7 @@
          <h3><?php echo $conf['title']; ?></h3>
          <?php tpl_menu1(); ?>
       </li>
-      <?php if ($INFO['perm'] > AUTH_READ || true == $conf['tpl_mmClean']['wikiBar']  ) { ?>
+      
       <li id='wiki_controls'>
          <h3>Wiki Menu</h3>
          <?php tpl_bottombar(); ?>
@@ -62,7 +62,7 @@
             </div>
          </div>
        </li>
-       <?php } ?>
+
           
       <?php if ( true == $conf['tpl_mmClean']['searchForm'] ) { ?>
       <li id='search'>
