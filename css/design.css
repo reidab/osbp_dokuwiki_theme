@@ -426,12 +426,12 @@ border-bottom: 1px solid #8cacbb;
 font-size:120%;
 }
 td.diff-addedline {
-  background:#ddffdd;
+  background: #cefed0;
   font-family: monospace;
   font-size: 100%;
 }
 td.diff-deletedline { 
-  background:#ffffbb;
+  background: #fbd6d6;
   font-family: monospace;    
   font-size: 100%;
 }
