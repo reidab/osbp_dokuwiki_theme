@@ -675,3 +675,7 @@ img.img_detail
 {
     border:0;
 }
+
+h2 a {
+	background: none !important;
+}
