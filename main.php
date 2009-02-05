@@ -13,7 +13,7 @@
 <div id="wrapper">
    <div id="header">
       <h1 id='site-title'><?php tpl_link(wl(),$conf['title'],'name="top" accesskey="h" title="[ALT+H]"') ?></h1>
-      <div id="site-description">An open source conference in Portland, Oregon | June 2009</div>
+      <div id="site-description">An open source conference in Portland, Oregon | June 17-19, 2009</div>
     </div>
     
     <div id="access">
