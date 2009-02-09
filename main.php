@@ -26,6 +26,7 @@
            <li class="page_item page-item-10"><a href="/about/" title="About">About</a></li>
            <li class="page_item page-item-22"><a href="/contact-us/" title="Contact Us">Contact Us</a></li>
            <li class="page_item page-item-56"><a href="/volunteer/" title="Volunteer">Volunteer</a></li>
+           <li class="page_item"><a href="/sponsors/" title="Sponsors">Sponsors</a></li>
            <li class="page_item"><a href="/proposals/">Proposals</a></li>
          </ul>
        </div>
