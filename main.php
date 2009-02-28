@@ -24,6 +24,7 @@
 
     <div id="menu">
          <ul>
+            <li><a href='/about/' title='About' class=''>About</a></li>
             <li><a href='/attend/' title='Attend' class=''>Attend</a></li>
             <li><a href='/proposals/' title='Proposals' class=''>Proposals</a></li>
             <li><a href="/volunteer/" title="Volunteer">Get Involved</a></li>
