@@ -9,12 +9,17 @@
  @include(dirname(__FILE__).'/header.php');
 ?>
 <body>
-<?php @include(dirname(__FILE__).'/topheader.html')?>
+<?php @include(dirname(__FILE__).'/topheader.html') ?>
 <div id="wrapper">
-   <div id="header">
-      <h1 id='site-title'><?php tpl_link(wl(),$conf['title'],'name="top" accesskey="h" title="[ALT+H]"') ?></h1>
-      <div id="site-description">An open source conference in Portland, Oregon | June 17-19, 2009</div>
-      <div id='conference-date-location'><p>June 17&ndash;19, 2009 - Portland, OR</p></div>
+   <div id="header">      
+      <div class='inner_container'>
+         <h1 id="site-title"><span><?php tpl_link(wl(),$conf['title'],'name="top" accesskey="h" title="[ALT+H]"') ?></span></h1>
+         <div id="site-description">
+            <h2>The conference for open source citizens</h2>
+            <p id='conference-date-location'>June 17&ndash;19, 2009 <span class='separator'>|</span> Portland, Oregon</p>
+         </div>
+         <a href='/attend' title='Early bird discount ends March 31st. Register today!' id="header-reg-now">Register now and save!</a>
+      </div>
     </div>
     
    <div id="access">
@@ -24,7 +29,7 @@
 
     <div id="menu">
          <ul>
-            <li><a href='/about/' title='About' class=''>About</a></li>
+            <li id="menu_first_item"><a href='/about/' title='About' class=''>About</a></li>
             <li><a href='/attend/' title='Attend' class=''>Attend</a></li>
             <li><a href='/proposals/' title='Proposals' class=''>Proposals</a></li>
             <li><a href="/volunteer/" title="Volunteer">Get Involved</a></li>
@@ -33,10 +38,10 @@
          </ul>
       </div>
       
-      <div id='menu-sidebar-background'></div>
-      <div id='menu-sidebar-nav'>
-         <a href='/attend' title='Register Now' class='register-now-button'>Register Now</a>
-         <a href='/events/2009/proposals/new' title='Submit a Proposal' class='submit-a-proposal-button'>Submit a Proposal</a>
+      <div id="subnav" class='navbar'>
+         <div class='inner_container'>
+            <h2>Planning Wiki</h2>
+         </div>
       </div>
    </div>
       
@@ -53,7 +58,7 @@
         </div>
       </div>
   <?php flush()?>
-</div>
+
 
 <div class='sidebar'>
    <ul class="xoxo">
@@ -81,8 +86,11 @@
       <?php } ?>
       <?php tpl_indexerWebBug();?>
 </div>
+</div>
 
-  <div id='footer'></div>
+   <div id='footer'>
+      &copy; 2008&ndash;2009 Open Source Bridge Foundation | <a href='/contact-us'>Contact Us</a>
+   </div>
 </div>
 
 <script type="text/javascript">
