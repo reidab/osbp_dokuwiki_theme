@@ -9,7 +9,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $conf['lang']?>" lang="<?php echo $conf['lang']?>" dir="<?php echo $lang['direction']?>">
 <head>
 	<title><?php tpl_pagetitle()?> [<?php echo hsc($conf['title'])?>]</title>
-	<meta name="Author" content="Marcin Mierzejewski @ Zenzire"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="Keywords" content="<?php if ( $conf['tpl_mmClean']['keywords'] ) echo $conf['tpl_mmClean']['keywords'].","; ?><?php tpl_pagetitle()?>"/>
   <meta name="Description" content="<?php if ( $conf['tpl_mmClean']['description'] ) echo $conf['tpl_mmClean']['description']; ?><?php tpl_pagetitle()?>"/>
