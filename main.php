@@ -31,7 +31,7 @@
          <ul>
             <li id="menu_first_item"><a href='/about/' title='About' class=''>About</a></li>
             <li><a href='/attend/' title='Attend' class=''>Attend</a></li>
-            <li><a href='/proposals/' title='Proposals' class=''>Proposals</a></li>
+            <li><a href='/sessions/' title='Sessions' class=''>Sessions</a></li>
             <li><a href="/volunteer/" title="Volunteer">Get Involved</a></li>
             <li><a href="/sponsors/" title="Sponsors">Sponsors</a></li>
             <li><a href="/">Blog</a></li>
