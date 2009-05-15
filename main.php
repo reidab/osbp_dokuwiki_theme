@@ -11,7 +11,7 @@
 <body>
 <?php @include(dirname(__FILE__).'/topheader.html') ?>
 <div id="wrapper">
-   <div id="header">      
+   <div id="header">
       <div class='inner_container'>
          <h1 id="site-title"><span><?php tpl_link(wl(),$conf['title'],'name="top" accesskey="h" title="[ALT+H]"') ?></span></h1>
          <div id="site-description">
@@ -21,7 +21,7 @@
          <a href='/attend' title='Early bird discount ends April 10th. Register today!' id="header-reg-now">Register now and save!</a>
       </div>
     </div>
-    
+
    <div id="access">
     <div class="skip-link">
       <a href="#content" title="Skip to content">Skip to content</a>
@@ -34,19 +34,20 @@
             <li><a href='/sessions/' title='Sessions' class=''>Sessions</a></li>
             <li><a href="/volunteer/" title="Volunteer">Get Involved</a></li>
             <li><a href="/sponsors/" title="Sponsors">Sponsors</a></li>
-            <li><a href="/">Blog</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/wiki/">Wiki</a></li>
          </ul>
       </div>
-      
+
       <div id="subnav" class='navbar'>
          <div class='inner_container'>
             <h2>Planning Wiki</h2>
-            
-            
+
+
          </div>
       </div>
    </div>
-      
+
    <div id="container">
       <?php flush()?>
 
@@ -68,7 +69,7 @@
          <h3><?php echo $conf['title']; ?></h3>
          <?php tpl_menu1(); ?>
       </li>
-      
+
       <li id='wiki_controls'>
          <h3>Wiki Menu</h3>
          <?php tpl_bottombar(); ?>
@@ -79,7 +80,7 @@
          </div>
        </li>
 
-          
+
       <?php if ( true == $conf['tpl_mmClean']['searchForm'] ) { ?>
       <li id='search'>
          <h3>Wiki Search</h3>
